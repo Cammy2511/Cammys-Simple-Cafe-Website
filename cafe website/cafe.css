@@ -1,0 +1,130 @@
+:root {
+   --bg: rgb(245, 227, 241);
+        --main-color: #c95f8d;
+        --accent-color: #a8d7ee;
+        --font-family: 'Georgia', serif;
+        --border-color: #111220;
+        --border-radius: 10px;
+  --cute-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--main-color);
+  font-family: var(--font-family);
+  margin: 30px;
+  padding: 40px;
+  text-align: center;
+}
+
+header {
+  background-image: url('background-image.jpg');
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 40px;
+  margin: 30px;
+  font-size: 2em;
+  border-bottom: 3px solid var(--border-color);
+  box-shadow: var(--cute-shadow);
+}
+
+nav {
+  background-color: white;
+  padding: 10px 0;
+  border-radius: var(--border-radius);
+  margin-top: 15px;
+  box-shadow: var(--cute-shadow);
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: black;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  margin: 0 5px;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+}
+
+section {
+  margin: 30px auto 40px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid var(--main-color);
+  border-radius: var(--border-radius);
+  width: 80%;
+  max-width: 700px;
+  box-shadow: var(--cute-shadow);
+}
+
+.img-container {
+  margin-top: 15px;
+}
+
+img {
+  width: 80%;
+  max-width: 700px;
+  border: 3px solid var(--border-color);
+  box-shadow: 0 4px 8px rgba(68, 8, 8, 0.767);
+  border-radius: var(--border-radius);
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  text-align: center;
+}
+
+ul li {
+  padding: 15px;
+  font-size: 1.5em;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.box {
+  flex: 1 1 200px;
+  background-color: white;
+  border: 2px dashed var(--main-color);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  box-shadow: var(--cute-shadow);
+}
+
+footer {
+  background-color: var(--main-color);
+  color: white;
+  padding: 30px;
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9em;
+  box-shadow: var(--cute-shadow);
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 3px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

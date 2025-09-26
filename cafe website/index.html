@@ -1,0 +1,178 @@
+<!--
+    Lab # 1:Simple Cafe
+    Course: CIT2011
+    Name: Camaria Simpson
+    Date: 2025-09-25
+    Time of Class: 3:00 PM
+    ID NUMBER: 2405856
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cammys Café</title>
+    <link rel="stylesheet" href="cafe.css">
+
+    <style>
+       :root{
+        --bg: rgb(245, 227, 241);
+        --main-color: #c95f8d;
+        --accent-color: #a8d7ee;
+        --font-family: 'Georgia', serif;
+        --border-color: #111220;
+        --border-radius: 10px;
+       } 
+      /*tag selector*/
+
+        body{
+            background-color: var(--bg);
+            color: var(--main-color);
+            font-family: var(--font-family);
+            margin: 30px;
+            padding: 40px;
+            text-align: center;
+        }
+
+       header{
+           background-image:url('background-image.jpg');
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 40px;
+            margin: 30px;
+            font-size: 1.00em;
+            border-bottom: 3px solid var(--border-color);
+        }
+
+        nav{
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        nav a{
+            display: inline-block;
+            text-align: center;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: var(--accent-color);
+             color: black;
+             border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+
+       nav a:hover {
+      background-color: var(--accent-color);
+      color: var(--main-color);
+    }
+        
+        section {
+             margin: 30px auto;
+             margin-bottom: 40px;
+      padding: 40px;
+      background-color: white;
+      border: 2px solid var(--main-color);
+      border-radius: 10px;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /*class selector*/
+    .img-container {
+        margin-top: 15px;   
+        }
+
+    img {
+        width: 80%;
+        max-width: 700px;
+        border: 3px solid var(--border-color);
+        box-shadow: 0 4px 8px rgba(68, 8, 8, 0.767);
+        border-radius: 10px;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+
+    ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 30px;
+    }
+
+        ul li {
+      padding: 30px;
+      font-size: 1.00em;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      color: white;
+      padding: 30px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+      margin: 30px auto;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+    </style>
+</head>
+    <body>
+  <header>
+    <h1>Cammys Café</h1>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+   <section id="home">
+    <h2>Welcome to Cammys Café</h2>
+    <p>Start your day with love and a warm cup of beverages and tasty pastries.</p>
+    <div class="img-container">
+      <img src="cafe.jpg" alt="Cammys Café">
+    </div>
+  </section>
+
+  <div class="box-container">
+    <div class="box">
+      <h3>Our Menu</h3>
+      <p>Explore our delicious pastries and drinks.</p>
+      <a href="menu.html">Explore our Menu</a>
+    </div>
+    <div class="box">
+      <h3>About Us</h3>
+      <p>Cammys Café is a cozy spot serving the community with love and flavor.</p>
+      <a href="about.html">Learn More</a>
+    </div>
+    <div class="box">
+      <h3>Contact Us</h3>
+      <p>We'd love to hear from you!Send a Feedback.</p>
+      <a href="contact.html">Get in Touch</a>
+    </div>
+  </div>
+
+  <footer>
+    <p> Opening Hours</p>
+  Mon-Sat 7:00 am to 7:00 pm<br>
+  Sunday - Closed<br><br>
+    <p>© 2024 Cammys Café. All Rights Reserved.</p>
+    <p>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Terms of Use</a>
+  </p>
+</footer>
+</body>
+</html>
